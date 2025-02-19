@@ -68,38 +68,46 @@ class ChevySpark(AbsAuto):
 
 
 class AbsFactory(abc.ABC):
-
+    @staticmethod
     @abs.abstractmethod
     def create_economy():
         pass
 
+    @staticmethod
     @abs.abstractmethod
     def create_sport():
         pass
 
+    @staticmethod
     @abs.abstractmethod
     def create_luxury():
         pass
 
 
 class FordFactory(AbsFactory):
+    @staticmethod
     def create_economy():
         return FordFiesta()
 
+    @staticmethod
     def create_sport():
         return FordMustang()
 
+    @staticmethod
     def create_luxury():
         return LincolnMKS()
 
 
 class GMFactory(AbsFactory):
+    @staticmethod
     def create_economy():
         return ChevySpark()
 
+    @staticmethod
     def create_sport():
         return ChevyCamaro()
 
+    @staticmethod
     def create_luxury():
         return CadillacCTS()
 
