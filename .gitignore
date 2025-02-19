@@ -1,0 +1,32 @@
+# Python cache and artifacts
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment (pyenv & Poetry)
+.env/
+.venv/
+
+# Pyenv-specific files
+.python-version
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+*/.Spotlight-V100
+*/.Trashes
+.fseventsd
+
+# Logs and debugging files
+*.log
+
+# VS Code settings
+.vscode/
