@@ -1,15 +1,17 @@
 import abc
 
-
 class AbsFactory(abc.ABC):
-    @abc.abstractstaticmethod
+    @staticmethod
+    @abc.abstractmethod
     def create_economy():
         pass
-
-    @abc.abstractstaticmethod
+    
+    @staticmethod
+    @abc.abstractmethod
     def create_sport():
         pass
 
-    @abc.abstractstaticmethod
+    @staticmethod
+    @abc.abstractmethod
     def create_luxury():
         pass
